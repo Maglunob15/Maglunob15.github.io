@@ -1,0 +1,143 @@
+/* Set base font size for the HTML element */
+html {
+  font-size: 10px;
+}
+
+/* Style the body element */
+body {
+  font-family: 'Times New Roman', Times, serif; /* Set font family */
+  font-size: 1.5rem; /* Set font size */
+  line-height: 1.6rem; /* Set line height */
+  text-align: center; /* Center text */
+  color: #000000; /* Set text color */
+  margin: 5%; /* Set margin */
+}
+
+/* Style the .div-btn class (button-like elements) */
+.div-btn {
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px 20px; /* Add padding around the button */
+  background-color: rgb(175, 151, 223); /* Set background color */
+  color: rgb(250, 250, 247); /* Set text color */
+  border-radius: 5px; /* Round the corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for .div-btn */
+.div-btn:hover {
+  background-color: rgb(255, 255, 0); /* Change background color on hover */
+}
+
+/* Style the main heading (h1) */
+h1 {
+  font-size: 4rem; /* Set font size */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Responsive font size for h1 on small screens (max-width: 460px) */
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem; /* Decrease font size */
+    line-height: 1.2; /* Adjust line height */
+  }
+}
+
+/* Style the secondary heading (h2) */
+h2 {
+  font-size: 3.25rem; /* Set font size */
+}
+
+/* Style for anchor tags (links) */
+a {
+  color: rgb(5, 22, 102); /* Set link color */
+}
+
+/* Style for visited links */
+a:visited {
+  color: rgb(0, 0, 0); /* Set color for visited links */
+}
+
+/* Style the main container (#main) */
+#main {
+  margin: 30px 8px; /* Set margin */
+  padding: 15px; /* Add padding */
+  border-radius: 5px; /* Round corners */
+  background: rgb(175, 151, 223); /* Set background color */
+  color: rgb(255, 255, 255); /* Set text color */
+}
+
+/* Responsive margin adjustments for #main on small screens */
+@media (max-width: 460px) {
+  #main {
+    margin: 0; /* Remove margin */
+  }
+}
+
+/* Style for images */
+img {
+  max-width: 100%; /* Make image responsive */
+  display: block; /* Block display for images */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+  border-radius: 5px; /* Round corners */
+}
+
+/* Style for the image container (#img-div) */
+#img-div {
+  background: rgb(96, 97, 94); /* Set background color */
+  padding: 15px; /* Add padding */
+  margin: 0; /* Remove margin */
+  border-radius: 5px; /* Round corners */
+}
+
+/* Style for the image caption (#img-caption) */
+#img-caption {
+  margin: 15px 0 5px 0; /* Set margin */
+}
+
+/* Responsive font size adjustments for #img-caption on small screens */
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem; /* Decrease font size */
+  }
+}
+
+/* Style for the headline (#headline) */
+#headline {
+  margin: 45px 0; /* Set margin */
+  text-align: center; /* Center text */
+  font-size: 20px; /* Set font size */
+}
+
+/* Style for unordered list (ul) */
+ul {
+  max-width: 550px; /* Limit width of the list */
+  margin: 0 auto 50px auto; /* Center list and add bottom margin */
+  text-align: left; /* Align text to the left */
+  line-height: 1.6rem; /* Set line height */
+}
+
+/* Style for list items (li) */
+li {
+  margin: 16px 0; /* Set margin between list items */
+}
+
+/* Style for paragraphs inside divs */
+div p {
+  font-style: italic; /* Italicize text */
+  line-height: 1.6rem; /* Set line height */
+  text-align: center; /* Center text */
+}
+
+/* Style for div elements */
+div {
+  display: inline; /* Make div inline element */
+  clear: both; /* Clear floats */
+  text-align: center; /* Center text */
+}
+
+/* Style for list items inside divs */
+div li {
+  display: inline; /* Make list items inline */
+  margin-right: 20px; /* Add margin between items */
+}

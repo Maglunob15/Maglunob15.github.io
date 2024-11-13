@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* =======================
+   Global Styles
+======================= */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* =======================
+   Body Styles
+======================= */
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+/* =======================
+   Navigation Styles
+======================= */
+nav {
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    align-items: center; /* Align items vertically in the center */
+    height: 100%; /* Ensure the nav container takes full height */
+}
+
+.logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.logo span {
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.hamburg,
+.cancel {
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.nav-container .links {
+    display: flex;
+    margin: 0 20px;
+}
+
+.nav-container .links a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 550;
+    margin: 0 15px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-container .links a:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+/* =======================
+   Dropdown Styles
+======================= */
+.dropdown {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: translateY(-500px);
+    backdrop-filter: blur(4px) brightness(40%);
+    transition: transform 0.2s ease;
+}
+
+.dropdown .links a {
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown .links a:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+/* =======================
+   Section and Main Container Styles
+======================= */
+section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =======================
+   Main Container Styles
+======================= */
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+/* =======================
+   Content Styles
+======================= */
+.main-container .content {
+    color: #fff;
+    max-width: 40%;
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main-container .content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
+}
+
+/* =======================
+   Content Headings
+======================= */
+.content h1 {
+    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+    color: #fff;
+}
+
+.content h1 span {
+    font-weight: 700;
+    color: rgb(190, 23, 23);
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+.content .typewriter {
+    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+    font-weight: 700;
+    color: #fff;
+}
+
+.content p {
+    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+    margin: 10px 0;
+}
+
+/* =======================
+   Social Links
+======================= */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links i {
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0.2rem solid rgb(255, 0, 0);
+    border-radius: 50%;
+    color: rgb(245, 245, 245);
+    font-size: 1.5rem;
+    transition: transform 0.2s linear, background-color 0.2s ease;
+}
+
+.social-links i:hover {
+    transform: scale(1.3);
+    background-color: rgb(255, 0, 0);
+    color: #000;
+}
+
+/* =======================
+   Button Styles
+======================= */
+.content button {
+    width: 50%;
+    height: 6vh;
+    margin: 30px 0;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s linear, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.content button:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 0 0 40px 5px rgba(255, 0, 0, 0.5);
+}
+
+/* =======================
+   Image Styles
+======================= */
+.main-container .image,
+.main-container .images {
+    width: 400px;
+    height: 80vh;
+    border-radius: 2%;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgb(255, 0, 0);
+    transition: transform 0.5s ease;
+}
+
+.main-container .image img,
+.main-container .images img {
+    width: 100%;
+    height: 100%;
+}
+
+/* =======================
+   Academic Section Styles
+======================= */
+.academic-container {
+    padding: 2rem;
+    color: #fff;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Shadow effect */
+}
+
+.academic-container h1 {
+    font-size: 2.5rem;
+    color: rgb(255, 0, 0);
+    margin-bottom: 1rem; /* Space below heading */
+}
+
+.academic-container h1 span {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+.subject {
+    background: rgba(255, 0, 0, 0.1); /* Light red background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    margin-bottom: 1rem; /* Space between subjects */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+}
+
+.subject:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+.subject h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.subject h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px; /* Height of the divider */
+    background: rgb(255, 0, 0);
+    margin-top: 5px; /* Space above divider */
+}
+
+.subject ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.subject ul li {
+    margin-bottom: 5px;
+    position: relative; /* To position the bullet */
+    padding-left: 1.5rem; /* Space for bullet */
+}
+
+.subject ul li::before {
+    content: '➜'; /* Custom bullet */
+    position: absolute;
+    left: 0; /* Position bullet */
+    color: rgb(255, 0, 0); /* Bullet color */
+}
+
+
+.subject ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, text-shadow 0.3s;
+}
+
+.subject ul li a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(255, 0, 0); /* Light red glow */
+}
+
+/* Contact Section */
+.contact-container {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* Input Styles */
+.contact-inputs,
+textarea {
+    width: 400px;
+    padding: 15px; /* Increased padding for inputs */
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 5px; /* Rounded corners */
+    border: none;
+    outline: none;
+    transition: border 0.2s ease, box-shadow 0.2s ease; /* Added shadow on focus */
+}
+
+textarea {
+    height: 100px;
+}
+
+.contact-inputs:focus,
+textarea:focus {
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 884px) {
+    nav {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .main-container {
+        flex-direction: column-reverse;
+    }
+
+    .nav-container .links {
+        display: none;
+    }
+
+    .hamburg,
+    .cancel {
+        display: block;
+    }
+
+    .main-container .content {
+        width: 80%;
+    }
+
+    .social-links i {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .main-container .image {
+        width: 50%;
+        height: 60%;
+    }
+
+    .contact-inputs,
+    textarea {
+        width: 90%;
+    }
+}
+
+@media (max-width: 440px) {
+    .main-container .image {
+        width: 70%;
+        height: 60%;
+    }
+
+    .main-container .content {
+        width: 80%;
+    }
+
+    .contact-inputs,
+    textarea {
+        width: 90%;
+    }
+}

@@ -1,0 +1,45 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    width: 900px;
+}
+
+@font-face {
+    font-family: 'myFirstFont';
+    src: url("../Font/MarkoOne-Regular.woff2") format("woff2"),
+         url("../Font/MarkoOne-Regular.woff") format("woff"),
+         url("../Font/MarkoOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'myFirstFont', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+#footer {
+    text-align: left;
+    clear: both;
+    font-style: italic;
+}

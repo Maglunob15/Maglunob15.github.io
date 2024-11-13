@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="author" content="Maglunob, Reynald B.">
+    <meta name="description" content="Final Projects">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Contact</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <!-- Logo Placeholder -->
+            </div>
+            <div class="links">
+                <!-- Navigation Links -->
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="academic.html">Academic</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <!-- Hamburger Icon for Mobile View -->
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        
+        <!-- Dropdown Menu for Mobile View -->
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="academic.html">Academic</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section>
+        <div class="academic-container" data-aos="fade-up" data-aos-duration="1500">
+            <h1>Academic <span>Background/Activities</span></h1>
+            <div class="subjects">
+                <!-- Academic Background Section -->
+                <div class="subject">
+                    <h2>ACADEMIC BACKGROUND</h2>
+                    <ul>
+                        <li>
+                            Cainta Elementary School
+                            <ul>
+                                <li>54 A. Bonifacio</li>
+                                <li>Graduated Batch 2015-2016</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Francisco P. Felix Memorial National High School
+                            <ul>
+                                <li>Brgy. Sto. Domingo, Cainta, Rizal</li>
+                                <li>Graduated Batch 2019-2020</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Cainta Catholic College
+                            <ul>
+                                <li>1900 A. Bonifacio Avenue, Cainta, Rizal</li>
+                                <li>Graduated Batch 2021-2022</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Web Development Projects Section -->
+                <div class="subject">
+                    <h2>WebDev</h2>
+                    <ul>
+                        <li><a href="BSCS-3A/WEB DEV/CS313Assign1/CS313Assign1-Maglunob, Reynald.HTML">CS313Assign1</a></li>
+                        <li><a href="BSCS-3A/WEB DEV/assignment2/index.HTML">assignment2</a></li>
+                        <li><a href="BSCS-3A/WEB DEV/Assignment3/Assignment3.html">Assignment3</a></li>
+                        <li><a href="BSCS-3A/WEB DEV/Assignment4/Black Goose Bistro • Summer Menu/Index.html">Assignment4</a></li>
+                        <li><a href="BSCS-3A/WEB DEV/Assignment5/index.html">Assignment5</a></li>
+                    </ul>
+                </div>
+
+                <!-- Thesis Section -->
+                <div class="subject">
+                    <h2>Midterm Project</h2>
+                    <ul>
+                        <li><a href="BSCS-3A/Midterm Project/Midterm Project/index.html">Midterm Project</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AOS Library Initialization -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0,});
+    </script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

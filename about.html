@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="author" content="Maglunob, Reynald B.">
+    <meta name="description" content="Final Projects">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>About Me</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <!-- Logo Placeholder -->
+            </div>
+            <div class="links">
+                <!-- Navigation Links -->
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="academic.html">Academic</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <!-- Hamburger Icon for Mobile View -->
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        
+        <!-- Dropdown Menu for Mobile View -->
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="academic.html">Academic</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <h1>About <span>Me</span></h1>
+                <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    I am Reynald B. Maglunob, a 21 year old student at Cainta Catholic College, pursuing a Bachelor of Science in Computer Science. 
+                    I live in Teacher's Village Phase 2, Brgy. San Andres, Cainta, Rizal. My academic experience has fueled my interest in web development, where I enjoy solving problems and continuously learning new things.
+                </p>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+                    Aside from my passion for web development, basketball is a huge part of my life. Whether it's hitting the court for a quick game or playing in organized matches, basketball helps me stay active, focused, and disciplined. 
+                    I enjoy the teamwork, strategy, and physical challenge that the sport brings. It's not just about the game for me—it's about leadership, quick decision-making, and constantly pushing myself to improve, both on and off the court.
+                </p>
+            </div>
+            <div class="images" data-aos="zoom-in" data-aos-duration="3000">
+                <img src="images/CV.png" alt="About Me Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- AOS Library Initialization -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0,});
+    </script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
